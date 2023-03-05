@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Osu! Comments</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="comments">
+        <h1 class="comments__title">
+          Комментарии <span id="comments__amount"></span>
+        </h1>
+        <div class="comments__create">
+          <form class="comments__form">
+            <div style="display: flex; gap: 10px; align-items: center">
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя"
+                autocomplete="off"
+                class="input"
+              />
+              <p class="error">Поля не должны быть пустыми!</p>
+            </div>
+            <input type="date" name="date" class="input" />
+
+            <textarea
+              name="comment"
+              placeholder="Оставьте свое мнение"
+              class="input"
+            ></textarea>
+
+            <p name="help">Нажмите Enter для отправки.</p>
+            <button name="send">Отправить</button>
+          </form>
+        </div>
+        <div class="comments__comments">
+          <!-- <div class="comments__comment comment">
+            <h3 class="comment__title">
+              Name <span class="comment__date">2023-02-02</span>
+            </h3>
+            <p class="comment__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              laborum quibusdam itaque cum, aperiam laboriosam necessitatibus
+              soluta expedita quo nihil!
+            </p>
+            <div class="comment__likesAndDeleteWrapper">
+              <div class="comment__likes-block">
+                <img src="./icons/like.svg" alt="like" class="comment__like" />
+                <span class="comment__likes-amount">11</span>
+              </div>
+              <div class="comment__delete">
+                <img src="./icons/delete.svg" alt="delete" class="deleteIcon" />
+                <span class="deleteLabel">Удалить комментарий</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
